@@ -1,6 +1,6 @@
 const fs = require('fs');
 
-const index = fs.readFileSync(`${__dirname}/../client/login.html`);
+const index = fs.readFileSync(`${__dirname}/../client/Login.html`);
 const css = fs.readFileSync(`${__dirname}/../css/styles.css`);
 
 const getResponse = (request, response, statusCode, contentType, content) => {
