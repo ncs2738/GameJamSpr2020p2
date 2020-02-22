@@ -9,9 +9,19 @@ html, body
 body
 {
     visibility: hidden;
+    background-color: rgb(236, 236, 236);
 }
 
-#HideMe
+#login {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+.FindMe button
 {
     opacity: 0;
     display: inline-block; 
@@ -20,10 +30,117 @@ body
     border: none;
     padding: 14px 28px;
     font-size: 16px;
-    cursor: pointer;
     text-align: center;
     position: fixed;
+    align-items: center;
+}
+
+#HidEMe
+{
     bottom: 0;
     right: 0;
 }
 
+#hIdEMe
+{
+    top: 45%;
+    left: 0;
+
+}
+
+#hIDEme
+{
+    left: 15%;
+    top: 25%;
+}
+
+#HIdEme
+{
+    left: 55%;
+    top: 45%;
+}
+
+#hIdEme
+{
+    bottom: 75%;
+    right: 20%;
+}
+
+#hIdeme{
+    left:35%;
+    bottom: 10%;
+}
+
+#HIDeme
+{
+    top: 0;
+    left: 0;
+}
+
+#hIDemE
+{
+    bottom: 30%;
+    left: 20%;
+}
+
+#HiDeme, #hIDeme, #HiDEme
+{
+    top: 0;
+    right: 0;
+}
+#HIdeme, #hIDEME
+{
+    top: 0;
+    left: 0;
+}
+
+#Hideme, #HidEme, #hiDEme
+{
+    right: 0;
+}
+
+#HideMe
+{
+    top: 20%;
+}
+
+#hidEme
+{
+    bottom: 15%;
+    right: 15%;
+}
+
+#HIDEME, #HIDEme
+{
+    bottom: 0;
+    left: 0;
+}
+
+.field
+{
+    font-family: 'Kosugi Maru', sans-serif;
+    font-size: 20px;
+    height: 30px;
+    color:rgb(65, 71, 77);
+    background:rgb(252, 252, 252);
+    border: 1px black solid;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#SubmitButton
+{
+    background:rgb(93, 93, 94);
+    border: 3px rgb(28, 28, 28) solid;
+    border-radius: 10px;
+    color:rgb(252, 252, 252);
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+label, h1
+{
+    font-family: 'Kosugi Maru', sans-serif;
+    text-align: center;
+}

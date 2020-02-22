@@ -4,22 +4,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Jua|Kosugi+Maru" rel="stylesheet">
     <title>Aller au fond de cette</title>
 </head>
 
 <body>
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username"><br>
-        <label for="pwd">Password:</label><br>
-        <input type="password" id="pwd" name="pwd"><br><br>
-        <input type="submit" value="Submit" id="SubmitButton"><br>
-        <h2 id="WRONG"></h2>
+        <div id = "login">
+            <label for="username">Username:</label><br>
+            <input class = "field"  type="text" id="username" name="username"><br>
+            <label for="pwd">Password:</label><br>
+            <input  class = "field" type="password" id="pwd" name="pwd"><br><br>
+            <input type="submit" value="Submit" id="SubmitButton"><br>
+            <h2 id="WRONG"></h2>
+        </div>
 
-      <div id = "FindMe">
-        <form method="get" action="file.doc">
-            <button id = "HideMe" type="submit">Download!</button>
-         </form>
-      </div>
+        <div id = "#1" class = "FindMe">
+            <button id = "HiDeme"></button>
+          </div>
+          <div  id = "#2" class = "FindMe">
+            <button id = "hIDemE"></button>
+          </div>
+          <div  id = "#3"  class = "FindMe">
+            <button id = "HIDeme"></button>
+          </div>
+          <div  id = "#4"  class = "FindMe">
+            <button id = "hIdeme"></button>
+          </div>
+          <div  id = "#5"  class = "FindMe">
+            <button id = "hidEme"></button>
+          </div>
+          <div  id = "#6"  class = "FindMe">
+            <button id = "HidEme"></button>
+          </div>
+          <div   id = "#7" class = "FindMe">
+            <button id = "hIdEme"></button>
+          </div>
+          <div  id = "#8"  class = "FindMe">
+            <button id = "hIdEMe"></button>
+          </div>
+          <div  id = "#9"  class = "FindMe">
+            <button id = "HIdEme"></button>
+          </div>
+          <div  id = "#10"  class = "FindMe">
+            <button id = "hiDEme"></button>
+          </div>
+          <div  id = "#11"  class = "FindMe">
+            <button id = "HiDEme"></button>
+          </div>
+          <div  id = "#12" class = "FindMe">
+            <button id = "HidEMe"></button>
+          </div>
+          <div  id = "#13"  class = "FindMe">
+            <button id = "hIDEme"></button>
+          </div>
+          <div  id = "#14"  class = "FindMe">
+            <button id = "hIDeme"></button>
+          </div>
+          <div  id = "#15" class = "FindMe">
+            <button id = "HIDEme"></button>
+          </div>
 </body>
 <script>
     var reveal = () =>
@@ -34,9 +77,16 @@
     const init = () => 
     {
     const submitButton = document.querySelector("#SubmitButton");
-
     const checkInfo = () => checkPass(username.value, pwd.value);
     submitButton.addEventListener('click', checkInfo);
+
+    const button1= document.querySelector("#HidEMe");
+    const getFile = () => getUrl("https://people.rit.edu/~ncs2738/GameJam2020/il-ne-reste-que-le-nom.html");
+    button1.addEventListener('click', getFile);
+
+    const button2= document.querySelector("#hIdEMe");
+    const getUser = () => getUrl("https://resoudre-lenigme.herokuapp.com/");
+    button2.addEventListener('click', getUser);
     };
 
     const checkPass = (user, pass) => 
@@ -44,7 +94,7 @@
                                                                               //chut confiture de gibier secret
         if(user.toLowerCase() === "xxbigsneakxx" && pass.toLowerCase().replace(/\s+/g, "").trim() === "chutconfituredegibiersecret")
         {
-            window.open("https://people.rit.edu/ncs2738/Interactive%20Web%20Game/Prototype/SecretWinner/Winnerar.html");
+            getUrl("https://people.rit.edu/ncs2738/Interactive%20Web%20Game/Prototype/SecretWinner/Winnerar.html");
         }
         else
         {
@@ -52,7 +102,13 @@
         }
     };
 
+    const getUrl = (searchUrl) =>
+    {
+        window.open(searchUrl);
+    };
+
 window.onload = init;
+
 </script>
 
 </html>
