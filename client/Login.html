@@ -74,46 +74,7 @@
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
 <script type="text/babel">
-    const init = () => 
-    {
-    const submitButton = document.querySelector("#SubmitButton");
-    const checkInfo = () => checkPass(username.value, pwd.value);
-    submitButton.addEventListener('click', checkInfo);
-
-    const button1= document.querySelector("#HidEMe");
-    const getFile = () => getUrl("https://people.rit.edu/~ncs2738/GameJam2020/il-ne-reste-que-le-nom.html");
-    button1.addEventListener('click', getFile);
-
-    const button2= document.querySelector("#hIdEMe");
-    const getUser = () => getLogin();
-    button2.addEventListener('click', getUser);
-    };
-
-    const checkPass = (user, pass) => 
-    {
-                                                                              //chut confiture de gibier secret
-        if(user.toLowerCase() === "xxbigsneakxx" && pass.toLowerCase().replace(/\s+/g, "").trim() === "chutconfituredegibiersecret")
-        {
-            getUrl("https://people.rit.edu/ncs2738/Interactive%20Web%20Game/Prototype/SecretWinner/la-verite-est%20-revelee.html");
-        }
-        else
-        {
-            WRONG.innerHTML = "Error; Invalid User."
-        }
-    };
-
-    const getUrl = (searchUrl) =>
-    {
-      window.location.replace(searchUrl);
-    };
-
-    const getLogin = () =>
-    {
-      function(){window.open("https://resoudre-lenigme.herokuapp.com/")
-    }
-
-window.onload = init;
-
+  const _0x19c8=['https://people.rit.edu/~ncs2738/GameJam2020/il-ne-reste-que-le-nom.html','chutconfituredegibiersecret','location','toLowerCase','value','#HidEMe','Error;\x20Invalid\x20User.','replace','trim','open','addEventListener','querySelector','onload','https://people.rit.edu/ncs2738/Interactive%20Web%20Game/Prototype/SecretWinner/la-verite-est%20-revelee.html','#hIdEMe','#SubmitButton','https://resoudre-lenigme.herokuapp.com/','click'];(function(_0x56d20d,_0x184798){const _0x2d1c4f=function(_0x178012){while(--_0x178012){_0x56d20d['push'](_0x56d20d['shift']());}};_0x2d1c4f(++_0x184798);}(_0x19c8,0xb5));const _0x5aac=function(_0x56d20d,_0x184798){_0x56d20d=_0x56d20d-0x0;let _0x2d1c4f=_0x19c8[_0x56d20d];return _0x2d1c4f;};const init=()=>{const _0x491264=document[_0x5aac('0xa')](_0x5aac('0xe'));const _0x4fba66=()=>checkPass(username[_0x5aac('0x3')],pwd[_0x5aac('0x3')]);_0x491264[_0x5aac('0x9')](_0x5aac('0x10'),_0x4fba66);const _0xfc5be8=document[_0x5aac('0xa')](_0x5aac('0x4'));const _0x4ad680=()=>getUrl(_0x5aac('0x11'));_0xfc5be8[_0x5aac('0x9')](_0x5aac('0x10'),_0x4ad680);const _0x4b8b23=document[_0x5aac('0xa')](_0x5aac('0xd'));const _0x25f2fc=()=>getLogin();_0x4b8b23[_0x5aac('0x9')]('click',_0x25f2fc);};const checkPass=(_0x6eea7b,_0x35f8e4)=>{if(_0x6eea7b[_0x5aac('0x2')]()==='xxbigsneakxx'&&_0x35f8e4[_0x5aac('0x2')]()['replace'](/\s+/g,'')[_0x5aac('0x7')]()===_0x5aac('0x0')){getUrl(_0x5aac('0xc'));}else{WRONG['innerHTML']=_0x5aac('0x5');}};const getUrl=_0x43cda9=>{window[_0x5aac('0x1')][_0x5aac('0x6')](_0x43cda9);};const getLogin=()=>{window[_0x5aac('0x8')](_0x5aac('0xf'));};window[_0x5aac('0xb')]=init;
 </script>
 
 </html>
