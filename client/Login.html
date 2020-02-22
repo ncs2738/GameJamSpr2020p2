@@ -85,7 +85,7 @@
     button1.addEventListener('click', getFile);
 
     const button2= document.querySelector("#hIdEMe");
-    const getUser = () => function(){window.open("https://resoudre-lenigme.herokuapp.com/")};
+    const getUser = () => getLogin();
     button2.addEventListener('click', getUser);
     };
 
@@ -106,6 +106,11 @@
     {
       window.location.replace(searchUrl);
     };
+
+    const getLogin = () =>
+    {
+      function(){window.open("https://resoudre-lenigme.herokuapp.com/")
+    }
 
 window.onload = init;
 
