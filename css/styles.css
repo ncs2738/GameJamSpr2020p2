@@ -1,0 +1,29 @@
+html, body 
+{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    visibility: hidden;
+}
+
+#HideMe
+{
+    opacity: 0;
+    display: inline-block; 
+    height: 10vw;
+    width: 10vw;
+    border: none;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+    <title>Aller au fond de cette</title>
+</head>
+
+<body>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd"><br><br>
+        <input type="submit" value="Submit" id="SubmitButton"><br>
+        <h2 id="WRONG"></h2>
+
+      <div id = "FindMe">
+        <form method="get" action="file.doc">
+            <button id = "HideMe" type="submit">Download!</button>
+         </form>
+      </div>
+</body>
+<script>
+    var reveal = () =>
+    {
+        document.body.style.display = "inline";
+        document.body.style.visibility = "visible";
+    }
+</script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+<script type="text/babel">
+    const init = () => 
+    {
+    const submitButton = document.querySelector("#SubmitButton");
+
+    const checkInfo = () => checkPass(username.value, pwd.value);
+    submitButton.addEventListener('click', checkInfo);
+    };
+
+    const checkPass = (user, pass) => 
+    {
+                                                                              //chut confiture de gibier secret
+        if(user.toLowerCase() === "xxbigsneakxx" && pass.toLowerCase().replace(/\s+/g, "").trim() === "chutconfituredegibiersecret")
+        {
+            window.open("https://people.rit.edu/ncs2738/Interactive%20Web%20Game/Prototype/SecretWinner/Winnerar.html");
+        }
+        else
+        {
+            WRONG.innerHTML = "Error; Invalid User."
+        }
+    };
+
+window.onload = init;
+</script>
+
+</html>
